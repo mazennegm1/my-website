@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | NHU</title>
+    <link rel="stylesheet" href="Style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body class="body-login">
+    <header class="header-main">
+        <div class="logo">
+            <a href="#"><img src="/img/nhulogo.png" alt="NHU Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+                <li> <a href="about.html"><i class="fa-solid fa-circle-info"></i>About</a></li>
+                <li><a href="#"><i class="fa-solid fa-graduation-cap"></i>Academics</a></li>
+                <li> <a href="#"><i class="fa-solid fa-pen-to-square"></i>Admissions</a>
+                </li>
+                <li> <a href="#"><i class="fa-solid fa-newspaper"></i>News</a>
+                </li>
+                <li> <a href="#"><i class="fa-solid fa-address-book"></i>Contact Us</a>
+                </li>
+            </ul>
+
+
+
+        </nav>
+        <div class="acctions">
+            <button id="mode"><i class="fa-solid fa-moon"></i></button>
+            <a href="#">Apply Now</a>
+            <a href="login.html">NHU Portal</a>
+        </div>
+    </header>
+
+    <main class="main-login">
+        <section class="login">
+            <div class="login-form">
+                <form class="form-login">
+                    <h1>Welcome Back!</h1>
+                    <div class="username">
+                        <label for="username">
+                            <div class="username-title">
+                                <i class="fa-solid fa-user"></i>
+                                <p>Email, Phone Number, or Username</p>
+
+                            </div>
+                        </label>
+                        <input type="text" name="username" id="username" placeholder="username">
+                    </div>
+
+                    <div class="password">
+                        <label for="password">
+                            <div class="password-title">
+                                <i class="fa-solid fa-lock"></i>
+                                <p>Password</p>
+                            </div>
+                        </label>
+                        <div>
+                            <input type="password" name="password" id="password" placeholder="password">
+                            <button type="button" id="eye" class="eye"><i class="fa-solid fa-eye-slash"></i></button>
+                        </div>
+                    </div>
+                    <div class="login-actions">
+                        <div class="remember-me">
+                            <input type="checkbox" name="remember-me" id="remember-me-ch">
+                            <label for="remember-me-ch">Remember Me</label>
+                        </div>
+                        <div class="forget-password">
+                            <a href="">Forget Password?</a>
+                        </div>
+                    </div>
+                    <div class="btn-login">
+                        <div class="login-btn">
+                            <input type="submit" name="" id="" value="Login">
+                        </div>
+                        <div class="help">
+                            <button>Need Help?</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>

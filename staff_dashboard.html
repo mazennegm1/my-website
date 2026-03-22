@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Dashboard | NHU</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="Style/style.css">
+</head>
+
+<body class="dashboard">
+  <aside class="sidebar">
+
+    <ul>
+      <div class="logo-dashboard">
+        <a href="#"><img src="/img/nhulogo.png" alt=""></a>
+      </div>
+      <li class="sidebar1">
+        <a href="">
+          <i class="fa-solid fa-house"></i>
+          Dashboard </a>
+      </li>
+      <li class="sidebar1">
+        <a href="">
+          <i class="fa-solid fa-layer-group"></i> Courses
+        </a>
+      </li>
+      <li class="sidebar1">
+        <a href="">
+          <i class="fa-solid fa-users"></i><span>Students</span>
+        </a>
+      </li>
+      <li class="sidebar1">
+        <a href="">
+          <i class="fa-solid fa-clipboard-user"></i><span>Attendance</span>
+        </a>
+      </li>
+      <li class="sidebar1">
+        <a href="">
+          <i class="fa-solid fa-chart-line"></i><span>Grades</span></a>
+      </li>
+      <li class="sidebar1">
+        <a href="">
+          <i class="fa-solid fa-envelope"></i><span>Messages</span>
+        </a>
+      </li>
+      <li class="sidebar1">
+        <a href="">
+          <i class="fa-solid fa-gear"></i><span>Settings</span>
+        </a>
+      </li>
+      <li class="logout">
+        <a href="index.html">
+          <i class="fa-solid fa-right-from-bracket"></i><span>Logout</span>
+        </a>
+      </li>
+    </ul>
+  </aside>
+  <header class="header-dashboard">
+
+    <div>
+      <h1>Student Dashboard</h1>
+    </div>
+    <div class="actions">
+      <a href=""><i class="fa-solid fa-bell"></i></a>
+      <a href=""><i class="fa-solid fa-circle-user"></i></a>
+      <button id="mode"><i class="fa-solid fa-moon"></i></button>
+    </div>
+  </header>
+  <main class="main-dashboard">
+    <div class="staff-content">
+      <section class="welcome">
+        <div class="data">
+          <h2>welcome,Staff name</h2>
+          <p>Department: Computer Science</p>
+          <p>Today: 3 Lecctures</p>
+        </div>
+        <div class="back-to-home"><a href="index.html">Back To Home</a></div>
+      </section>
+      <section class="cards">
+        <div class="card">
+          <h3>5 courses</h3>
+        </div>
+        <div class="card">
+          <h3>120 Students</h3>
+        </div>
+        <div class="card">
+          <h3>8 Requests</h3>
+        </div>
+      </section>
+      <div class="t">
+        <section class="Requests">
+          <h2>Student Requests</h2>
+
+          <table class="table-staff">
+            <thead>
+              <tr>
+                <th>Student Name</th>
+                <th>Request Type</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Moamen Salah</td>
+                <td>Drop Course</td>
+                <td class="Status">Pending</td>
+              </tr>
+              <tr>
+                <td>Mazen Negm </td>
+                <td>Excuse</td>
+                <td class="Status1">Rejected</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section class="schedule">
+          <h2>Today's Schedule</h2>
+          <table class="table-staff scheduletable">
+            <thead>
+              <tr>
+                <th>Time</th>
+                <th>Course</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>10:00 AM</td>
+                <td>Data Structure</td>
+              </tr>
+              <tr>
+                <td>12:00 PM</td>
+                <td>Algorithm Class</td>
+              </tr>
+              <tr>
+                <td>2:00PM</td>
+                <td>Office Hours</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+      </div>
+      <section class="announcements">
+        <h2>Announcements</h2>
+        <ul>
+          <li>Midterm Schedule Posted</li>
+          <li>Meeting on Thursday</li>
+          <li>System Maintenance Notice</li>
+        </ul>
+      </section>
+    </div>
+  </main>
+  <footer class="footer-dashboard">
+    <div class="footer-top">
+      <!-- <div class="logo-footer"><img src="/img/nhulogo.png" alt=""></div> -->
+      <div class="support">
+        <a href="">Support</a>
+        <a href="">Privacy</a>
+        <a href="">Contact</a>
+      </div>
+    </div>
+    <div class="footer-mid">
+      <h3>
+        FOLLOW US</h3>
+      <ul>
+        <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+        <li><a href=""><i class="fa-brands fa-tiktok"></i></a></li>
+        <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+        <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <i class="fa-solid fa-copyright"></i>
+      <p> Nile Horizon University</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>

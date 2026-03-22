@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Grades | NHU</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="Style/style.css">
+</head>
+
+<body class="dashboard">
+  <aside class="sidebar">
+
+    <ul>
+      <div class="logo-dashboard">
+        <a href="#"><img src="/img/nhulogo.png" alt=""></a>
+      </div>
+      <li class="sidebar1">
+        <a href="">
+          <i class="fa-solid fa-house"></i>
+          Dashboard </a>
+      </li>
+      <li class="sidebar1">
+        <a href="">
+          <i class="fa-solid fa-layer-group"></i> Courses
+        </a>
+      </li>
+      <li class="sidebar1">
+        <a href="">
+          <i class="fa-solid fa-users"></i><span>Students</span>
+        </a>
+      </li>
+      <li class="sidebar1">
+        <a href="">
+          <i class="fa-solid fa-clipboard-user"></i><span>Attendance</span>
+        </a>
+      </li>
+      <li class="sidebar1">
+        <a href="">
+          <i class="fa-solid fa-chart-line"></i><span>Grades</span></a>
+      </li>
+      <li class="sidebar1">
+        <a href="">
+          <i class="fa-solid fa-envelope"></i><span>Messages</span>
+        </a>
+      </li>
+      <li class="sidebar1">
+        <a href="">
+          <i class="fa-solid fa-gear"></i><span>Settings</span>
+        </a>
+      </li>
+      <li class="logout">
+        <a href="index.html">
+          <i class="fa-solid fa-right-from-bracket"></i><span>Logout</span>
+        </a>
+      </li>
+    </ul>
+  </aside>
+  <header class="header-dashboard">
+
+    <div>
+      <h1>Student Grades</h1>
+    </div>
+    <div class="actions">
+      <a href=""><i class="fa-solid fa-bell"></i></a>
+      <a href=""><i class="fa-solid fa-circle-user"></i></a>
+      <button id="mode"><i class="fa-solid fa-moon"></i></button>
+    </div>
+  </header>
+  <main class="main-dashboard">
+    <div class="staff-content">
+
+
+      <section class="grades-card">
+        <h2>Student Information</h2>
+        <div class="grid">
+          <div class="box">
+            <span>Name</span>
+            <p>Ahmed Ali Mustafa Mohamed</p>
+          </div>
+          <div class="box">
+            <span>ID</span>
+            <p>102456</p>
+          </div>
+          <div class="box">
+            <span>Date of Birth</span>
+            <p>15/8/2007</p>
+          </div>
+          <div class="box">
+            <span>Faculty</span>
+            <p>Computer Science</p>
+          </div>
+        </div>
+      </section>
+      <section class="grades-card">
+        <div class="top-grades">
+          <h2>Preparatory Year 2025-2026</h2>
+          <button class="download">Download PDF</button>
+
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th><strong>Module Code</strong></th>
+              <th><strong>Module Name</strong></th>
+              <th><strong>Assessments</strong></th>
+              <th><strong>Mark</strong></th>
+              <th><strong>Grade</strong></th>
+              <th><strong>P/F</strong></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>25WP101</td>
+              <td>Web Programming</td>
+              <td>Attendence 100<br>
+                Quizzes 78<br>
+                Midterm 62<br>
+                Final Exam 55</td>
+              <td>74</td>
+              <td class="grade">A</td>
+              <td class="pass">P</td>
+            </tr>
+            <tr>
+              <td>25DS101</td>
+              <td>Data Structure</td>
+              <td>Attendence 59<br>
+                Quizzes 90<br>
+                Midterm 79<br>
+                Final Exam 88</td>
+              <td>79</td>
+              <td class="grade">A</td>
+              <td class="pass">P</td>
+            </tr>
+            <tr>
+              <td>25OOP01</td>
+              <td>Object Oriented Programming</td>
+              <td>Attendence 60<br>
+                Quizzes 84<br>
+                Midterm 56<br>
+                Final Exam 43</td>
+              <td>61</td>
+              <td>B</td>
+              <td class="pass">P</td>
+            </tr>
+            <tr>
+              <td>25DB101</td>
+              <td>Database</td>
+              <td>Attendence 75<br>
+                Quizzes 90<br>
+                Midterm 64<br>
+                Final Exam 78</td>
+              <td>77</td>
+              <td class="grade">A</td>
+              <td class="pass">P</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="grades-card">
+        <h2>Summary</h2>
+        <table class="summarytable">
+          <thead>
+            <tr>
+              <th>Study Year</th>
+              <th>Total <strong>Mark</strong></th>
+              <th>Total Grade</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Preparatory Year</td>
+              <td>73</td>
+              <td>A</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
+  </main>
+  <footer class="footer-dashboard">
+    <div class="footer-top">
+      <!-- <div class="logo-footer"><img src="/img/nhulogo.png" alt=""></div> -->
+      <div class="support">
+        <a href="">Support</a>
+        <a href="">Privacy</a>
+        <a href="">Contact</a>
+      </div>
+    </div>
+    <div class="footer-mid">
+      <h3>
+        FOLLOW US</h3>
+      <ul>
+        <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+        <li><a href=""><i class="fa-brands fa-tiktok"></i></a></li>
+        <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+        <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <i class="fa-solid fa-copyright"></i>
+      <p> Nile Horizon University</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>
