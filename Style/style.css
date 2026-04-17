@@ -2877,6 +2877,7 @@ input:disabled {
 .input-box input,
 .input-box select,
 .input-box textarea {
+    width: 100%;
     background-color: var(--input);
     padding: 8px;
     border: 1px solid #ccc;
