@@ -559,7 +559,7 @@ footer h3 {
     justify-content: center;
     align-items: center;
     transition: ease 300ms;
-    margin: 10px 0px;
+    margin: 20px 0px;
     align-self: center;
     background-color: #1a1a1a;
 }
@@ -572,7 +572,6 @@ footer h3 {
 
 .logo-dashboard:hover {
     transform: scale(1.1);
-    background-color: #1a1a1a;
     box-shadow: 0 0 20px var(--primary);
 }
 
@@ -732,21 +731,23 @@ footer h3 {
     width: 15%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     background-color: var(--header);
+    gap: 30px;
+    border-right: 2px solid var(--primary);
+    transition: 250ms ease;
+
 
 }
 
 .sidebar ul {
     display: flex;
     flex-direction: column;
+    align-items: center;
     list-style: none;
     width: 100%;
     height: 100vh;
-    background-color: var(--header);
-    padding: 30px;
     gap: 30px;
-    border-right: 2px solid var(--primary);
     transition: 250ms ease;
 
 }
@@ -951,7 +952,19 @@ footer h3 {
     transition: 1s ease;
     margin-bottom: 50px;
     box-shadow: 0 0 10px var(--primary);
+    display: flex;
+    flex-direction: column;
+}
 
+.announcements a {
+    text-decoration: none;
+    padding: 20px 30px;
+    background-color: var(--primary);
+    border-radius: 12px;
+    color: var(--text);
+    width: 50%;
+    align-self: center;
+    margin: 10px 0;
 }
 
 .announcements ul {
@@ -1508,14 +1521,6 @@ tr:hover {
 
 }
 
-.username-title,
-.password-title {
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    padding: 10px 0px;
-    gap: 5px;
-}
 
 .username-title i,
 .username-title p,
@@ -1786,13 +1791,12 @@ tr:hover {
 
 }
 
-.course-join button {
+.course-join {
     margin-bottom: 20px;
     border: none;
     color: var(--text);
     background-color: var(--primary);
     padding: 10px 50px;
-    text-decoration: none;
     border-radius: 30px;
     transition: ease 0.3s;
     display: inline-block;
@@ -1802,7 +1806,7 @@ tr:hover {
 }
 
 
-.course-join button:hover {
+.course-join:hover {
     transform: translateY(-5px);
     background-color: var(--secondary);
     box-shadow: 0 0 10px var(--secondary);
@@ -2453,10 +2457,15 @@ tr:hover {
 }
 
 /* course managment */
-.course-managment .staff-content {
-    height: auto;
+.course-managment {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 
 
+.main-course-managment {
+    flex: 1;
 }
 
 .course-contentmanage {
@@ -2489,6 +2498,7 @@ tr:hover {
     padding-bottom: 40px;
 }
 
+
 .course-managment .staff-content>div {
     width: 100%;
     display: flex;
@@ -2496,6 +2506,7 @@ tr:hover {
     gap: 16px;
     margin-top: 30px;
 }
+
 
 .course-header {
     background-color: var(--card-dashboard);
@@ -2513,6 +2524,7 @@ tr:hover {
     border-color: var(--primary);
 }
 
+
 .coursemanage-title {
     display: flex;
     align-items: center;
@@ -2524,6 +2536,7 @@ tr:hover {
     transition: color 0.3s ease;
 }
 
+
 .coursemanage-title::after {
     content: "\f107";
     font-family: "Font Awesome 6 Free";
@@ -2533,14 +2546,17 @@ tr:hover {
     transition: transform 0.3s ease;
 }
 
+
 .course-contentmanage.active~.coursemanage-title::after,
 .coursemanage-title.open::after {
     transform: rotate(180deg);
 }
 
+
 .course-header.open .coursemanage-title::after {
     transform: rotate(180deg);
 }
+
 
 .course-contentmanage {
     display: none;
@@ -2553,11 +2569,13 @@ tr:hover {
     display: block;
 }
 
+
 .week {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
+
 
 .week-header {
     background-color: var(--bg);
@@ -2566,6 +2584,8 @@ tr:hover {
     overflow: hidden;
     transition: border-color 0.25s ease, box-shadow 0.25s ease;
     cursor: pointer;
+    justify-content: space-evenly;
+
     user-select: none;
 }
 
@@ -2573,6 +2593,7 @@ tr:hover {
     border-color: var(--secondary);
     box-shadow: 0 0 8px rgba(113, 177, 212, 0.3);
 }
+
 
 .week-header>h3 {
     display: flex;
@@ -2597,6 +2618,7 @@ tr:hover {
 .week-header.open>h3::after {
     transform: rotate(90deg);
 }
+
 
 .week-content {
     display: none;
@@ -2642,8 +2664,13 @@ tr:hover {
     flex-shrink: 0;
 }
 
-.course-managment main {
-    height: 120vh;
+.week a {
+    color: var(--secondary);
+
+}
+
+.week li {
+    justify-content: space-between;
 }
 
 /* Contact Us */
