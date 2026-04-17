@@ -32,16 +32,22 @@
         </nav>
         <div class="acctions">
             <button id="mode"><i class="fa-solid fa-moon"></i></button>
-            <a href="#">Apply Now</a>
-            <a href="index.html">Back To Home</a>
+            <a href="#" class="apply-now-header"><i class="fa-solid fa-user"></i> <span>Apply Now</span></a>
+            <a href="index.html"><i class="fa-solid fa-arrow-left"></i> <span>Back To Home</span></a>
         </div>
     </header>
 
     <main class="main-login">
+        <div id="login-error">
+            <strong> <i class="fa-solid fa-triangle-exclamation"></i> Login Failed!</strong>
+            <p>Invalid email or password</p>
+        </div>
         <section class="login">
+
             <div class="login-form">
                 <form class="form-login">
                     <h1>Welcome Back!</h1>
+
                     <div class="username">
                         <label for="username">
                             <div class="username-title">
@@ -79,7 +85,7 @@
                             <input type="submit" value="Login">
                         </div>
                         <div class="help">
-                            <button>Need Help?</button>
+                            <a>Need Help?</a>
                         </div>
                     </div>
                 </form>

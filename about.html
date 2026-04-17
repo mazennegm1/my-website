@@ -1,143 +1,194 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | NHU</title>
-    <link rel="stylesheet" href="/Style/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | NHU</title>
+  <link rel="stylesheet" href="Style/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <script src="script.js" defer></script>
 </head>
 
-<body class="">
-    <header class="header-main">
-        <div class="logo">
-            <a href="#"><img src="/img/nhulogo.png" alt="NHU Logo"></a>
+<body>
+  <header class="header-main">
+    <div class="logo">
+      <a href="#"><img src="/img/nhulogo.png" alt="NHU Logo"></a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#"><i class="fa-solid fa-house"></i>Home</a></li>
+        <li> <a href="about.html"><i class="fa-solid fa-circle-info"></i>About</a></li>
+        <li><a href="#"><i class="fa-solid fa-graduation-cap"></i>Academics</a></li>
+        <li> <a href="#"><i class="fa-solid fa-pen-to-square"></i>Admissions</a>
+        </li>
+        <li> <a href="#"><i class="fa-solid fa-newspaper"></i>News</a>
+        </li>
+        <li> <a href="#"><i class="fa-solid fa-address-book"></i>Contact Us</a>
+        </li>
+      </ul>
+
+
+
+    </nav>
+    <div class="acctions">
+      <button id="mode"><i class="fa-solid fa-moon"></i></button>
+      <a href="#">Apply Now</a>
+      <a href="login.html">NHU Portal</a>
+    </div>
+  </header>
+
+  <main class="main-about">
+    <section class="about">
+      <h2>About Nile Horizon University</h2>
+
+      <p class="about-text">
+        Nile Horizon University is a leading educational institution committed
+        to excellence and innovation.
+      </p>
+
+      <div class="about-cards">
+        <div class="about-card">
+          <img src="./img/mission.jpeg" />
+          <div class="overlay">Our Mission</div>
+          <h3>Mission</h3>
+          <p>
+            Our mission is to deliver high-quality, student-centered education
+            that fosters critical thinking, creativity, and lifelong learning.
+            We aim to equip our students with the practical skills, advanced
+            knowledge, and ethical values required to excel in their
+            professional careers.
+          </p>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#"><i class="fa-solid fa-house"></i>Home</a></li>
-                <li> <a href="about.html"><i class="fa-solid fa-circle-info"></i>About</a></li>
-                <li><a href="#"><i class="fa-solid fa-graduation-cap"></i>Academics</a></li>
-                <li> <a href="#"><i class="fa-solid fa-pen-to-square"></i>Admissions</a>
-                </li>
-                <li> <a href="#"><i class="fa-solid fa-newspaper"></i>News</a>
-                </li>
-                <li> <a href="#"><i class="fa-solid fa-address-book"></i>Contact Us</a>
-                </li>
-            </ul>
 
-
-
-        </nav>
-        <div class="acctions">
-            <button id="mode"><i class="fa-solid fa-moon"></i></button>
-            <a href="#">Apply Now</a>
-            <a href="login.html">NHU Portal</a>
+        <div class="about-card">
+          <img src="./img/vision.jpeg" />
+          <div class="overlay">Our Vision</div>
+          <h3>Vision</h3>
+          <p>
+            Our vision is to become a globally recognized university known for
+            academic excellence, innovation, and impactful research. We aspire
+            to be a hub of knowledge and creativity where students collaborate
+            to solve real-world challenges.
+          </p>
         </div>
-    </header>
-    <main class="main-about">
-        <section class="about">
 
-            <div class="about-container">
-
-                <h2>About Nile Horizon University</h2>
-
-                <p class="about-text">
-                    Nile Horizon University is a leading educational institution committed to excellence,
-                    innovation, and academic integrity. We provide students with a modern learning environment
-                    that combines theoretical knowledge with practical experience to prepare them for future careers.
-                </p>
-
-                <div class="about-row">
-                    <div class="about-image">
-                        <img src="/img/mission.jpeg" alt="Mission Image">
-                    </div>
-                    <div class="about-info">
-                        <h3>Our Mission</h3>
-                        <p>
-                            Our mission is to deliver high-quality, student-centered education that fosters critical
-                            thinking,
-                            creativity, and lifelong learning. We aim to equip our students with the practical skills,
-                            advanced knowledge, and ethical values required to excel in their professional careers.
-                        </p>
-                    </div>
-                </div>
-                <div class="about-row reverse">
-                    <div class="about-image">
-                        <img src="/img/vision.jpeg" alt="Vision Image">
-                    </div>
-                    <div class="about-info">
-                        <h3>Our Vision</h3>
-                        <p>
-                            Our vision is to become a globally recognized university known for academic excellence,
-                            innovation, and impactful research. We aspire to be a hub of knowledge and creativity
-                            where students collaborate to solve real-world challenges.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="about-row">
-                    <div class="about-image">
-                        <img src="/img/values.jpeg" alt="Values Image">
-                    </div>
-                    <div class="about-info">
-                        <h3>Our Values</h3>
-                        <p>
-                            We are guided by integrity, innovation, collaboration, and excellence. These values shape
-                            our academic environment and ensure a supportive and inspiring community for all students.
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-
-        </section>
-    </main>
-    <footer>
-        <div class="footer-top">
-            <div class="logo-footer"><img src="/img/nhulogo.png" alt=""></div>
-            <div class="quick-links">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Academics</a></li>
-                    <li><a href="">Admissions</a></li>
-                    <li><a href="">News</a></li>
-                </ul>
-            </div>
-            <div class="contact">
-                <h3>Contact Us</h3>
-                <a href="https://maps.app.goo.gl/5vU5sohKeAuPadBv5" target="_blank"><span class="color">Address
-                        :</span><span class="contact-add">Al
-                        tagamoa,<br> Gamal Abdel
-                        Nasser,<br> New Cairo 1, <br>Cairo
-                        Governorate</span></a>
-                <a href="tel:+2019991"><span class="color">Hotline :</span><span class="contact-hover">19991</span></a>
-                <a href="mailto:info@nhu.edu.eg"><span class="color">Email :</span><span
-                        class="contact-hover">info@nhu.edu.eg</span></a>
-            </div>
-
-            <div class="acctions footer-action">
-                <h3>Quick Actions</h3>
-                <a href="#">Apply Now</a>
-                <a href="#">NHU Portal</a>
-            </div>
+        <div class="about-card">
+          <img src="./img/values.jpeg" />
+          <div class="overlay">Our Values</div>
+          <h3>Values</h3>
+          <p>
+            We are guided by integrity, innovation, collaboration, and
+            excellence. These values shape our academic environment and ensure
+            a supportive and inspiring community for all students.
+          </p>
         </div>
-        <div class="connect">
-            <h3>
-                FOLLOW US</h3>
-            <ul>
-                <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
-                <li><a href=""><i class="fa-brands fa-tiktok"></i></a></li>
-                <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
-                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-            </ul>
-        </div>
-    </footer>
-    <script src="main.js"></script>
+      </div>
+    </section>
+    <section class="why-section">
+      <h2>Why Choose NHU?</h2>
 
+      <div class="why-wrapper">
+        <div class="why-box">
+          <i class="fa-solid fa-laptop-code"></i>
+          <h3>Modern Education</h3>
+          <p>We use the latest technology in teaching and learning.</p>
+        </div>
+
+        <div class="why-box">
+          <i class="fa-solid fa-user-graduate"></i>
+          <h3>Expert Faculty</h3>
+          <p>Our professors have strong academic and industry experience.</p>
+        </div>
+
+        <div class="why-box">
+          <i class="fa-solid fa-globe"></i>
+          <h3>Global Vision</h3>
+          <p>We prepare students for international careers.</p>
+        </div>
+
+        <div class="why-box">
+          <i class="fa-solid fa-briefcase"></i>
+          <h3>Career Support</h3>
+          <p>We help students find internships and jobs بسهولة.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-section stats-about">
+      <h2>NHU in Numbers</h2>
+
+      <div class="stats-container">
+        <div class="stat-box">
+          <h3 class="counter">15,000</h3>
+          <p>Students</p>
+        </div>
+
+        <div class="stat-box">
+          <h3 class="counter">120</h3>
+          <p>Professors</p>
+        </div>
+
+        <div class="stat-box">
+          <h3 class="counter">25</h3>
+          <p>Programs</p>
+        </div>
+
+        <div class="stat-box">
+          <h3 class="counter">10</h3>
+          <p>Years of Excellence</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer>
+    <div class="footer-top">
+      <div class="logo-footer"><img src="./img/nhulogo.png" alt="" /></div>
+      <div class="quick-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="">Academics</a></li>
+          <li><a href="">Admissions</a></li>
+          <li><a href="news.html">News</a></li>
+        </ul>
+      </div>
+      <div class="contact">
+        <h3>Contact Us</h3>
+        <a href="https://maps.app.goo.gl/5vU5sohKeAuPadBv5" target="_blank"><span class="color">Address :</span><span
+            class="contact-add">Al tagamoa,<br />
+            Gamal Abdel Nasser,<br />
+            New Cairo 1, <br />Cairo Governorate</span></a>
+        <a href="tel:+2019991"><span class="color">Hotline :</span><span class="contact-hover">19991</span></a>
+        <a href="mailto:info@nhu.edu.eg"><span class="color">Email :</span><span
+            class="contact-hover">info@nhu.edu.eg</span></a>
+      </div>
+
+      <div class="acctions footer-action">
+        <h3>Quick Actions</h3>
+        <a href="#">Apply Now</a>
+        <a href="#">NHU Portal</a>
+      </div>
+    </div>
+    <div class="connect">
+      <h3>FOLLOW US</h3>
+      <ul>
+        <li>
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="fa-brands fa-tiktok"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+        </li>
+      </ul>
+    </div>
+  </footer>
 </body>
 
 </html>

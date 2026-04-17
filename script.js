@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+    //Mazen
     let modebtn = document.getElementById("mode");
     modebtn.onclick = function () {
         document.body.classList.toggle("dark")
@@ -39,6 +40,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let course = document.querySelectorAll(".course-card")
     let searchCourse = document.getElementById("search-course");
+    course.forEach(card => {
+        card.onclick = function () {
+            let courseName = card.querySelector("h2").innerText;
+            localStorage.setItem("courseName", courseName)
+            window.location.href = "course_details.html";
+        }
+    })
+    let title = document.getElementById("course-name");
+    let coursename = localStorage.getItem("courseName");
+    if (title && coursename) {
+        title.textContent = coursename;
+    }
+
+    //Search
     if (searchCourse) {
         searchCourse.addEventListener("input", function () {
             let value = searchCourse.value.toLocaleLowerCase();
@@ -77,33 +92,90 @@ document.addEventListener("DOMContentLoaded", function () {
     let email = document.getElementById("username")
     let login = document.querySelector(".form-login")
 
-
     if (login && email && password) {
         login.onsubmit = function (e) {
             e.preventDefault();
             let emailValue = email.value;
             let passwordValue = password.value;
-
             let isLoggedIn = false;
+            let worng = document.getElementById("login-error")
 
             for (let i = 0; i < users.length; i++) {
                 if (emailValue === users[i].email && passwordValue === users[i].password) {
                     isLoggedIn = true;
+                    localStorage.setItem("thisUser", users[i].name)
                     if (users[i].role === "student") {
                         window.location.href = "student_dashboard.html";
                     } else {
                         window.location.href = "staff_dashboard.html";
                     }
+                    localStorage.setItem("role", users[i].role)
                     break;
+
                 }
 
             }
-            if (isLoggedIn === false) {
-                alert("Wrong email or password");
-            }
+            if (isLoggedIn === false)
+                worng.style.display = "block";
+
+            setTimeout(function () {
+                worng.style.display = "none";
+            }, 3000)
+
         }
 
 
     }
+    let name = localStorage.getItem("thisUser")
+    let studentName = document.querySelector(".studentStaffName")
+    if (name && studentName) {
+        studentName.textContent = "Welcome, " + name;
+    }
+    
+
+    //Jana
+    document.getElementById("admissionForm").addEventListener("submit", function (e) {
+        e.preventDefault();
+        alert("Form submitted successfully!");
+    });
 })
 
+//Moamen
+document.querySelectorAll(".coursemanage-title").forEach(title => {
+    title.addEventListener("click", function (e) {
+
+        e.stopPropagation();
+
+        let course = title.closest(".course-header");
+        let content = course.querySelector(".course-contentmanage");
+        let isOpen = content.classList.contains("active");
+
+        document.querySelectorAll(".course-contentmanage").forEach(c => {
+            c.classList.remove("active");
+        });
+
+        if (!isOpen) {
+            content.classList.add("active");
+        }
+    });
+});
+
+document.querySelectorAll(".week-header").forEach(week => {
+    week.addEventListener("click", function (e) {
+
+        e.stopPropagation();
+
+        let content = week.querySelector(".week-content");
+        let isOpen = content.classList.contains("active");
+
+        let course = week.closest(".course-header");
+
+        course.querySelectorAll(".week-content").forEach(w => {
+            w.classList.remove("active");
+        });
+
+        if (!isOpen) {
+            content.classList.add("active");
+        }
+    });
+});

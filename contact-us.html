@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NU - Contact Student Support</title>
+    <link rel="stylesheet" href="/Style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+</head>
+
+<body class="contact-us-body">
+    <header class="header-main">
+        <div class="logo">
+            <a href="#"><img src="/img/nhulogo.png" alt="NHU Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-house"></i>Home</a></li>
+                <li> <a href="about.html"><i class="fa-solid fa-circle-info"></i>About</a></li>
+                <li><a href="#"><i class="fa-solid fa-graduation-cap"></i>Academics</a></li>
+                <li> <a href="#"><i class="fa-solid fa-pen-to-square"></i>Admissions</a>
+                </li>
+                <li> <a href="#"><i class="fa-solid fa-newspaper"></i>News</a>
+                </li>
+                <li> <a href="#"><i class="fa-solid fa-address-book"></i>Contact Us</a>
+                </li>
+            </ul>
+
+
+
+        </nav>
+        <div class="acctions">
+            <button id="mode"><i class="fa-solid fa-moon"></i></button>
+            <a href="#">Apply Now</a>
+            <a href="login.html">NHU Portal</a>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <div class="form-card">
+            <h3 class="form-title">Contact Student Affairs</h3>
+
+            <div class="main-info-grid">
+                <div class="contact-form">
+                    <div class="grid-row two-cols">
+                        <div class="input-box">
+                            <label>Full Name</label>
+                            <input type="text" id="contactName" placeholder="Enter your name">
+                        </div>
+                        <div class="input-box">
+                            <label>Student Email</label>
+                            <input type="email" id="contactEmail" placeholder="username@nhu.edu.eg">
+                        </div>
+                    </div>
+
+                    <div class="input-box">
+                        <label>Subject</label>
+                        <select id="contactSubject">
+                            <option>General Inquiry</option>
+                            <option>Technical Issue (Portal)</option>
+                            <option>Coursework/Lab Feedback Query</option>
+                            <option>Admissions</option>
+                        </select>
+                    </div>
+
+                    <div class="input-box">
+                        <label>Message</label>
+                        <textarea id="contactMessage" rows="6" placeholder="How can we help you today?"></textarea>
+                    </div>
+
+                    <div id="contactResponse" class="response-box"></div>
+
+                    <button class="btn-green" onclick="handleContactSubmit()">Send Inquiry</button>
+                </div>
+
+                <div class="sidebar-info">
+                    <div class="info-card">
+                        <h4 class="info-title">Campus Information</h4>
+
+                        <div class="info-section">
+                            <label>Main Campus</label>
+                            <p>Al tagamoa,
+                                Gamal Abdel Nasser,
+                                New Cairo 1,
+                                Cairo Governorate</p>
+                        </div>
+
+                        <div class="info-section">
+                            <label>Hotline</label>
+                            <p class="hotline">19991</p>
+                        </div>
+
+                        <div class="info-section">
+                            <label>Support Email</label>
+                            <p>info@nhu.edu.eg</p>
+                            <p class="note">Response time: 24-48 hours</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-top">
+            <div class="logo-footer"><img src="./img/nhulogo.png" alt="" /></div>
+            <div class="quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="">Academics</a></li>
+                    <li><a href="">Admissions</a></li>
+                    <li><a href="news.html">News</a></li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h3>Contact Us</h3>
+                <a href="https://maps.app.goo.gl/5vU5sohKeAuPadBv5" target="_blank"><span class="color">Address
+                        :</span><span class="contact-add">Al tagamoa,<br />
+                        Gamal Abdel Nasser,<br />
+                        New Cairo 1, <br />Cairo Governorate</span></a>
+                <a href="tel:+2019991"><span class="color">Hotline :</span><span class="contact-hover">19991</span></a>
+                <a href="mailto:info@nhu.edu.eg"><span class="color">Email :</span><span
+                        class="contact-hover">info@nhu.edu.eg</span></a>
+            </div>
+
+            <div class="acctions footer-action">
+                <h3>Quick Actions</h3>
+                <a href="#">Apply Now</a>
+                <a href="#">NHU Portal</a>
+            </div>
+        </div>
+        <div class="connect">
+            <h3>FOLLOW US</h3>
+            <ul>
+                <li>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                </li>
+                <li>
+                    <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                </li>
+                <li>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                </li>
+                <li>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

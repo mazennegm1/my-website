@@ -60,7 +60,7 @@
   <header class="header-dashboard">
 
     <div>
-      <h1>Staff Dashboard</h1>
+      <h1>Student Feedback</h1>
     </div>
     <div class="actions">
       <a href=""><i class="fa-solid fa-bell"></i></a>
@@ -70,91 +70,104 @@
   </header>
   <main class="main-dashboard">
     <div class="staff-content">
-      <section class="welcome">
-        <div class="data">
-          <h2 class="studentStaffName"></h2>
-          <p>Department: Computer Science</p>
-          <p>Today: 3 Lecctures</p>
-        </div>
-        <div class="back-to-home"><a href="index.html">Back To Home</a></div>
-      </section>
-      <section class="cards">
-        <div class="card">
-          <h3>5 courses</h3>
-        </div>
-        <div class="card">
-          <h3>120 Students</h3>
-        </div>
-        <div class="card">
-          <h3>8 Requests</h3>
-        </div>
-      </section>
-      <div class="t">
-        <section class="Requests">
-          <h2>Student Requests</h2>
+      <div class="form-card">
 
-          <table class="table-staff">
-            <thead>
-              <tr>
-                <th>Student Name</th>
-                <th>Request Type</th>
-                <th>Status</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Moamen Salah</td>
-                <td>Drop Course</td>
-                <td class="Status">Pending</td>
-              </tr>
-              <tr>
-                <td>Mazen Negm </td>
-                <td>Excuse</td>
-                <td class="Status1">Rejected</td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
-        <section class="schedule">
-          <h2>Today's Schedule</h2>
-          <table class="table-staff scheduletable">
-            <thead>
-              <tr>
-                <th>Time</th>
-                <th>Course</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>10:00 AM</td>
-                <td>Data Structure</td>
-              </tr>
-              <tr>
-                <td>12:00 PM</td>
-                <td>Algorithm Class</td>
-              </tr>
-              <tr>
-                <td>2:00PM</td>
-                <td>Office Hours</td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
+        <div class="grid-top-row">
+          <div class="input-box">
+            <label>Feedback form type:</label>
+            <select>
+              <option>Lab coursework feedback</option>
+              <option>Project feedback</option>
+              <option>Class test feedback</option>
+            </select>
+          </div>
+          <div class="input-box">
+            <label>Academic Year:</label>
+            <select>
+              <option>PREP</option>
+              <option>YEAR 1</option>
+              <option>YEAR 2</option>
+              <option>YEAR 3</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="main-info-grid">
+          <div class="input-box">
+            <label>Module Name:</label>
+            <div class="module-input-wrap">
+              <input type="text" placeholder="Start typing name...">
+            </div>
+          </div>
+
+          <div class="input-box">
+            <label>Module Code:</label>
+            <input type="text" placeholder="e.g. CS101">
+          </div>
+
+          <div class="input-box">
+            <label>Student ID:</label>
+            <input type="text" placeholder="Filter By Student ID">
+          </div>
+
+          <div class="input-box">
+            <label>Module Leader(s):</label>
+            <input type="text">
+          </div>
+
+          <div class="input-box">
+            <label>Student Name:</label>
+            <input type="text">
+          </div>
+
+          <div class="input-box">
+            <label>Grade:</label>
+            <input type="text" disabled>
+          </div>
+        </div>
+
+        <hr class="section-divider">
+
+        <h2>Question 1</h2>
+
+        <div class="feedback-grid">
+          <label class="grid-label q-mark">Question Mark</label>
+          <label class="grid-label s-mark">Student Mark</label>
+
+          <div class="input-box">
+            <label>Grade</label>
+            <select>
+              <option></option>
+            </select>
+          </div>
+
+          <div class="input-box">
+            <label>Comment</label>
+            <div class="comment-input-row">
+              <textarea id="question1Text" rows="2" placeholder="Write student feedback..."></textarea>
+              <button class="btn-dark" onclick="addCommentToPinkBox()">Add Comment</button>
+            </div>
+          </div>
+
+          <div class="input-box col-3">
+            <input type="text">
+          </div>
+
+          <div class="input-box col-4">
+            <input type="text">
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <button class="btn-green">Save Form and Generate PDF</button>
+        </div>
 
       </div>
-      <section class="announcements">
-        <h2>Announcements</h2>
-        <ul>
-          <li>Midterm Schedule Posted</li>
-          <li>Meeting on Thursday</li>
-          <li>System Maintenance Notice</li>
-        </ul>
-      </section>
+
     </div>
   </main>
   <footer class="footer-dashboard">
     <div class="footer-top">
-      <!-- <div class="logo-footer"><img src="/img/nhulogo.png" alt=""></div> -->
       <div class="support">
         <a href="">Support</a>
         <a href="">Privacy</a>
