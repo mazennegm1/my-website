@@ -138,44 +138,44 @@ document.addEventListener("DOMContentLoaded", function () {
         e.preventDefault();
         alert("Form submitted successfully!");
     });
+    //Moamen
+    document.querySelectorAll(".coursemanage-title").forEach(title => {
+        title.addEventListener("click", function (e) {
+
+            e.stopPropagation();
+
+            let course = title.closest(".course-header");
+            let content = course.querySelector(".course-contentmanage");
+            let isOpen = content.classList.contains("active");
+
+            document.querySelectorAll(".course-contentmanage").forEach(c => {
+                c.classList.remove("active");
+            });
+
+            if (!isOpen) {
+                content.classList.add("active");
+            }
+        });
+    });
+
+    document.querySelectorAll(".week-header").forEach(week => {
+        week.addEventListener("click", function (e) {
+
+            e.stopPropagation();
+
+            let content = week.querySelector(".week-content");
+            let isOpen = content.classList.contains("active");
+
+            let course = week.closest(".course-header");
+
+            course.querySelectorAll(".week-content").forEach(w => {
+                w.classList.remove("active");
+            });
+
+            if (!isOpen) {
+                content.classList.add("active");
+            }
+        });
+    });
 })
 
-//Moamen
-document.querySelectorAll(".coursemanage-title").forEach(title => {
-    title.addEventListener("click", function (e) {
-
-        e.stopPropagation();
-
-        let course = title.closest(".course-header");
-        let content = course.querySelector(".course-contentmanage");
-        let isOpen = content.classList.contains("active");
-
-        document.querySelectorAll(".course-contentmanage").forEach(c => {
-            c.classList.remove("active");
-        });
-
-        if (!isOpen) {
-            content.classList.add("active");
-        }
-    });
-});
-
-document.querySelectorAll(".week-header").forEach(week => {
-    week.addEventListener("click", function (e) {
-
-        e.stopPropagation();
-
-        let content = week.querySelector(".week-content");
-        let isOpen = content.classList.contains("active");
-
-        let course = week.closest(".course-header");
-
-        course.querySelectorAll(".week-content").forEach(w => {
-            w.classList.remove("active");
-        });
-
-        if (!isOpen) {
-            content.classList.add("active");
-        }
-    });
-});
