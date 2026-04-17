@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
         card.onclick = function () {
             let courseName = card.querySelector("h2").innerText;
             localStorage.setItem("courseName", courseName)
-            window.location.href = "course_details.html";
+            window.location.href = "course-details.html";
         }
     })
     let title = document.getElementById("course-name");
@@ -105,9 +105,9 @@ document.addEventListener("DOMContentLoaded", function () {
                     isLoggedIn = true;
                     localStorage.setItem("thisUser", users[i].name)
                     if (users[i].role === "student") {
-                        window.location.href = "student_dashboard.html";
+                        window.location.href = "student-dashboard.html";
                     } else {
-                        window.location.href = "staff_dashboard.html";
+                        window.location.href = "staff-dashboard.html";
                     }
                     localStorage.setItem("role", users[i].role)
                     break;
@@ -131,7 +131,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (name && studentName) {
         studentName.textContent = "Welcome, " + name;
     }
-    
+
 
     //Jana
     document.getElementById("admissionForm").addEventListener("submit", function (e) {
