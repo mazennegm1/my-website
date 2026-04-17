@@ -1333,6 +1333,12 @@ tr:hover {
     margin-top: 100px;
 }
 
+.username label,
+.password label,
+.username i {
+    color: var(--text);
+}
+
 #login-error {
     position: absolute;
     top: 160px;
