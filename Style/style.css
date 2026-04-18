@@ -82,7 +82,7 @@ nav ul {
 
 .hero {
     width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, .4)), url("/img/NHU-Campas.png");
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url("/img/NHU-Campas.png");
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -1315,7 +1315,7 @@ tr:hover {
 /* Login */
 .login {
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, .4)), url("/img/NHU-Campas.png");
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url("/img/NHU-Campas.png");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -2126,7 +2126,6 @@ tr:hover {
 
 .academic-body h2 {
     color: var(--text);
-
     margin-top: 30px;
     margin-bottom: 15px;
     font-size: 22px;
@@ -2137,14 +2136,13 @@ tr:hover {
     color: var(--text);
 }
 
-.academic-body ul {
+.academic-body .container ul {
     color: var(--text);
-
     margin-bottom: 20px;
     padding-left: 20px;
 }
 
-.academic-body li {
+.academic-body .container li {
     margin-bottom: 10px;
 }
 
