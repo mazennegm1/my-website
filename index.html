@@ -1,171 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | NHU</title>
-    <link rel="stylesheet" href="Style/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="icon" type="image/png" href="/img/nhulogo-icon.png">
+    <title>Love U</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Tahoma, sans-serif;
+            background: linear-gradient(135deg, #111, #2b0f16);
+            color: white;
+            text-align: center;
+        }
 
+        .container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px
+        }
+
+        p {
+            font-size: 1.3rem;
+            max-width: 700px;
+            line-height: 1.8
+        }
+
+        .heart {
+            font-size: 5rem;
+            animation: beat 1s infinite
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+        }
+
+        #msg {
+            display: none;
+            margin-top: 25px;
+            font-size: 1.5rem
+        }
+
+        @keyframes beat {
+
+            0%,
+            100% {
+                transform: scale(1)
+            }
+
+            50% {
+                transform: scale(1.15)
+            }
+        }
+    </style>
 </head>
 
-<body class="home">
-    <header class="header-main">
-        <div class="logo">
-            <a href=""><img src="/img/nhulogo.png" alt="NHU Logo"></a>
+<body>
+    <div class="container">
+        <div class="heart">❤️</div>
+        <h1>I Love U</h1>
+        <p>
+            message</p>
+
+        <button onclick="showMsg()">Click Here</button>
+
+        <div id="msg">
+            <h2>message 💍</h2>
+            <p>message❤️</p>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
-                <li> <a href="about.html"><i class="fa-solid fa-circle-info"></i>About</a></li>
-                <li><a href="academics.html"><i class="fa-solid fa-graduation-cap"></i>Academics</a></li>
-                <li> <a href="admission.html"><i class="fa-solid fa-pen-to-square"></i>Admissions</a>
-                </li>
-                <li> <a href="news.html"><i class="fa-solid fa-newspaper"></i>News</a>
-                </li>
-                <li> <a href="contact-us.html"><i class="fa-solid fa-address-book"></i>Contact Us</a>
-                </li>
-            </ul>
+    </div>
 
-
-
-        </nav>
-        <div class="acctions">
-            <button id="mode"><i class="fa-solid fa-moon"></i></button>
-            <a href="admission.html">Apply Now</a>
-            <a href="login.html">NHU Portal</a>
-        </div>
-    </header>
-
-    <main class="main-home">
-        <section class="hero">
-            <div class="welcome">
-                <h1>Welcome To <br> The Nile Horizon University</h1>
-                <div class="hero-apply">
-                    <a href="admission.html">Apply Now</a>
-                </div>
-            </div>
-        </section>
-
-
-        <section class="partners">
-            <h2>Our Partners</h2>
-            <div class="cards">
-                <a href="https://www.london.ac.uk/" target="_blank">
-                    <div class="card">
-                        <div class="card-img-background"><img src="/img/images.png" alt=""></div>
-                    </div>
-                </a>
-                <a href="https://www.cam.ac.uk/" target="_blank">
-                    <div class="card">
-                        <div class="card-img-background"><img src="/img/Cambridge.png" alt="">
-                        </div>
-                    </div>
-                </a>
-                <a href="https://www.manchester.ac.uk/" target="_blank">
-                    <div class="card">
-                        <div class="card-img-background"><img src="/img/manchester.png" alt="">
-                        </div>
-                    </div>
-                </a>
-
-            </div>
-        </section>
-
-        <section class="stats-section">
-            <h2>NHU in Numbers</h2>
-
-            <div class="stats-container">
-                <div class="stat-box">
-                    <h3 class="counter">15,000</h3>
-                    <p>Students</p>
-                </div>
-
-                <div class="stat-box">
-                    <h3 class="counter">120</h3>
-                    <p>Professors</p>
-                </div>
-
-                <div class="stat-box">
-                    <h3 class="counter">25</h3>
-                    <p>Programs</p>
-                </div>
-
-                <div class="stat-box">
-                    <h3 class="counter">10</h3>
-                    <p>Years of Excellence</p>
-                </div>
-            </div>
-        </section>
-
-
-
-        <section class="faculties">
-            <h2>Our Faculties</h2>
-            <div class="facultie-card">
-                <a href="academics.html">
-                    <div class="fcard m"></div>
-                    Physical Therapy
-
-                </a>
-                <a href="academics.html">
-                    <div class="fcard e"></div>
-                    Engineering
-                </a>
-                <a href="academics.html">
-                    <div class="fcard f"></div>
-                    Arts & Design
-
-
-                </a>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer-top">
-            <div class="logo"><img src="/img/nhulogo.png" alt=""></div>
-            <div class="quick-links">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="academics.html">Academics</a></li>
-                    <li><a href="admission.html">Admissions</a></li>
-                    <li><a href="news.html">News</a></li>
-                </ul>
-            </div>
-            <div class="contact">
-                <h3>Contact Us</h3>
-                <a href="https://maps.app.goo.gl/5vU5sohKeAuPadBv5" target="_blank"><span class="color">Address
-                        :</span><span class="contact-add">Al
-                        tagamoa,<br> Gamal Abdel
-                        Nasser,<br> New Cairo 1, <br>Cairo
-                        Governorate</span></a>
-                <a href="tel:+2019991"><span class="color">Hotline :</span><span class="contact-hover">19991</span></a>
-                <a href="mailto:info@nhu.edu.eg"><span class="color">Email :</span><span
-                        class="contact-hover">info@nhu.edu.eg</span></a>
-            </div>
-
-            <div class="acctions footer-action">
-                <h3>Quick Actions</h3>
-                <a href="admission.html">Apply Now</a>
-                <a href="login.html">NHU Portal</a>
-            </div>
-        </div>
-        <div class="connect">
-            <h3>
-                FOLLOW US</h3>
-            <ul>
-                <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
-                <li><a href=""><i class="fa-brands fa-tiktok"></i></a></li>
-                <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
-                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-            </ul>
-        </div>
-    </footer>
-    <script src="script.js"></script>
+    <script>
+        function showMsg() {
+            document.getElementById('msg').style.display = 'block';
+        }
+    </script>
 </body>
 
 </html>
